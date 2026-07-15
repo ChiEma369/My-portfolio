@@ -1,0 +1,53 @@
+/* style.css */
+
+body { 
+    font-family: 'DM Sans', sans-serif; 
+}
+
+.glow-teal {
+    box-shadow: 0 0 40px 4px rgba(34, 211, 238, 0.35), inset 0 0 20px rgba(34,211,238,0.08);
+}
+
+.btn-glow {
+    box-shadow: 0 0 24px 2px rgba(34, 211, 238, 0.55);
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 34px 6px rgba(34, 211, 238, 0.75);
+}
+
+.text-glow {
+    text-shadow: 0 0 30px rgba(34, 211, 238, 0.25);
+}
+
+.radial-bg {
+    background:
+        radial-gradient(circle at 78% 32%, rgba(34,211,238,0.10), transparent 45%),
+        radial-gradient(circle at 20% 80%, rgba(34,211,238,0.05), transparent 40%);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: revealUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes revealUp {
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.card-scroll { 
+    -ms-overflow-style: none; /* Trình duyệt IE và Edge */
+    scrollbar-width: none;    /* Trình duyệt Firefox */
+}
+
+.card-scroll::-webkit-scrollbar { 
+    display: none; /* Trình duyệt Chrome, Safari và Opera */
+}
+
+.toast {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
